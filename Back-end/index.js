@@ -1,38 +1,58 @@
 
-import express from "express";
-import mongoose from "mongoose";
-import dotenv from "dotenv";
+const express=require("express");
+const mongoose=require("mongoose");
+const dotenv=require("dotenv");
+
+const Utilisateur=require("./Models/Utilisateur");
+const Ressource=require('./Models/Ressources');
+const Chapitre=require("./Models/Chapitre");
+const Cours=require("./Models/Cours");
+const Quiz=require("./Models/Quiz");
+const Question=require('./Models/Question')
+const Etudiant=require("./Models/Etudiant");
+const Enseignant=require("./Models/Enseignant");
+
+
+const utilisateurRoutes = require('./Routes/utilisateurRoutes');
+
+
 
 const app = express();
+
+app.use(express.json());
+app.use( utilisateurRoutes);
 
 dotenv.config();
 
 const PORT = process.env.PORT || 4000;
-
-const userSchema = new mongoose.Schema({
-    // nom: String,
-    // age: Number
-    state : String
-  });
-  
-  const UserModel = mongoose.model("collection1", userSchema);
-  
-  app.get("/getUsers", async (req, res) => {
-    try {
-      const users = await UserModel.find();
-      res.json(users);
-    } catch (error) {
-      console.error("Error fetching users:", error);
-      res.status(500).json({ message: "An error occurred while fetching users" });
-    }
-  });
-  
-const MONGOURL = process.env.MONGO_URL;
+const MONGO_url=process.env.MONGO_url;
 
 
-mongoose.connect(MONGOURL).then(() => {
-  console.log("Database connected successfully.");
-  app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+
+
+
+
+
+
+
+
+
+
+mongoose.connect(MONGO_url)
+  .then(() => {
+    console.log("Database connected successfully.");
+    app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.log('Error connecting to database:', error);
   });
-});
+
+
+
+
+
+
+
+

@@ -1,0 +1,134 @@
+
+.course-details-containers {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    background-color:white; 
+}
+
+
+.diff-dog{
+    display: flex;
+    background-color:white; 
+    background-image: url('../../../../public/assets/pattern.png'); 
+    background-size: cover; 
+    border-radius: 20px;
+    
+}
+.text-content h2{
+    font-size: 76px;
+    margin-left: 50px;
+}
+
+.text-content p{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.text-content h3{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+
+.text-content{
+    width:50% ;
+}
+
+.course-thumbnail {
+    /* width: 100%; */
+    width: 50%;
+    max-height: 500px;
+    margin-bottom: 20px;
+}
+
+.competences, .chapters, .tranche-age {
+    margin-top: 20px;
+}
+
+.competences span{
+    display: inline-block;
+    background: #f1f1f1;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* EnRoll.css */
+
+.course-details-container {
+    padding: 20px;
+}
+
+/* .course-thumbnail {
+    max-width: 100%;
+    height: auto;
+} */
+
+.chapters {
+    margin-top: 20px;
+}
+
+.chapters ul {
+    list-style: none;
+    padding: 0;
+}
+
+.chapters li {
+    margin-bottom: 10px;
+}
+
+.chapters details {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chapters summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tranche-age {
+    margin-top: 20px;
+}
+
+#goombella{
+    height: 70px;
+    
+}
+
+.resources {
+    margin-top: 10px;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources li {
+    margin-bottom: 5px;
+}
+
+.resource-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.resource-button i {
+    margin-right: 8px;
+}
+
+.resource-button:hover {
+    background-color: #0056b3;
+}

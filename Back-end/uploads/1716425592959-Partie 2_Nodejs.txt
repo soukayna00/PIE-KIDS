@@ -1,0 +1,113 @@
+CRÉER DES APIS REST SIMPLES EN NODE JS ET EXPRESS JS:
+
+1-Créer une application Nodejs : 
+
+ commande : npm init -y
+
+2-Installez les dépendances nécessaires, c'est-à-dire Express.js, en utilisant la commande suivante :
+
+ npm install express
+
+3-Créez un fichier index.js dans votre dossier de projet et ajoutez le code suivant pour configurer votre serveur Express :
+
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Middleware pour parser les requêtes JSON
+app.use(express.json());
+
+// Endpoint de test
+app.get('/', (req, res) => {
+  res.send('API REST fonctionnelle');
+});
+
+// Endpoint pour récupérer tous les utilisateurs
+app.get('/users', (req, res) => {
+  const users = ['Utilisateur 1', 'Utilisateur 2', 'Utilisateur 3'];
+  res.json(users);
+});
+
+// Endpoint pour récupérer un utilisateur par son ID
+app.get('/users/:id', (req, res) => {
+  const userId = req.params.id;
+  const user = `Utilisateur ${userId}`;
+  res.json(user);
+});
+
+// Endpoint pour créer un nouvel utilisateur
+app.post('/users', (req, res) => {
+  const newUser = req.body;
+  // Logique de création de l'utilisateur dans la base de données
+  res.json(newUser);
+});
+
+// Endpoint pour mettre à jour un utilisateur existant
+app.put('/users/:id', (req, res) => {
+  const userId = req.params.id;
+  const updatedUser = req.body;
+  // Logique de mise à jour de l'utilisateur dans la base de données
+  res.json(updatedUser);
+});
+
+// Endpoint pour supprimer un utilisateur
+app.delete('/users/:id', (req, res) => {
+  const userId = req.params.id;
+  // Logique de suppression de l'utilisateur dans la base de données
+  res.send(`Utilisateur ${userId} supprimé`);
+});
+
+// Démarrer le serveur
+app.listen(port, () => {
+  console.log(`Serveur démarré sur le port ${port}`);
+});
+
+
+
+4-Exécutez votre serveur en utilisant la commande suivante dans votre terminal :
+
+node index.js
+
+5-Voici quelques exemples d'URL que vous pouvez tester sur POSTMAN :
+
+http://localhost:3000/ : affiche "API REST fonctionnelle"
+http://localhost:3000/users : récupère tous les utilisateurs
+http://localhost:3000/users/1 : récupère l'utilisateur avec l'ID 1
+http://localhost:3000/users/2 : récupère l'utilisateur avec l'ID 2
+Vous pouvez également tester les endpoints POST, PUT et DELETE à l'aide d'un outil comme Postman en leur envoyant des requêtes avec les données appropriées.
+
+
+/***********Exercice*************************/
+
+1-Créez un nouveau dossier pour votre projet.
+Initialisez un projet Node.js dans ce dossier.
+
+2-Installez Express.js comme dépendance.
+
+3-Créez un fichier index.js pour configurer votre serveur Express et implémenter les fonctionnalités suivantes:
+
+3-1-Lorsqu'une requête GET est envoyée à la racine de l'API (/), elle doit renvoyer le message "API REST fonctionnelle".
+3-2-Lorsqu'une requête GET est envoyée à l'endpoint /users, elle doit renvoyer la liste de tous les utilisateurs sous forme de tableau JSON. Par exemple :
+
+[
+  {
+    "id": 1,
+    "name": "Fullstack204"
+  },
+  {
+    "id": 2,
+    "name": "Fullstack205"
+  }
+]
+3-3-Lorsqu'une requête GET est envoyée à l'endpoint /users/:id (où :id représente l'ID de l'utilisateur), elle doit renvoyer les détails de l'utilisateur correspondant à l'ID spécifié. Par exemple, pour /users/1, la réponse devrait être :
+
+{
+  "id": 1,
+  "name": "Fullstack204"
+}
+
+3-4-Lorsqu'une requête POST est envoyée à l'endpoint /users, elle doit créer un nouvel utilisateur avec les données fournies dans le corps de la requête. Les données JSON envoyées devraient inclure le nom de l'utilisateur. La réponse devrait renvoyer les détails de l'utilisateur nouvellement créé, y compris l'ID attribué par le serveur.
+
+3-5-Lorsqu'une requête PUT est envoyée à l'endpoint /users/:id (où :id représente l'ID de l'utilisateur), elle doit mettre à jour les informations de l'utilisateur correspondant à l'ID spécifié. Les données JSON envoyées devraient inclure le nouveau nom de l'utilisateur. La réponse devrait renvoyer les détails de l'utilisateur mis à jour.
+
+3-6-Lorsqu'une requête DELETE est envoyée à l'endpoint /users/:id (où :id représente l'ID de l'utilisateur), elle doit supprimer l'utilisateur correspondant à l'ID spécifié. La réponse devrait renvoyer un message indiquant que l'utilisateur a été supprimé avec succès.

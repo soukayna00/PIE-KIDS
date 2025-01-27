@@ -1,0 +1,36 @@
+.containers-regist{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: white; 
+    /* background-image: url('../../../public/assets/pattern.png');  */
+    background-size: cover; 
+    display: flex;
+    height: 100vh;
+}
+
+#thekid {
+    height: 450px;
+
+    margin-top: 10px;
+    animation: float 4s ease-in-out infinite; /* Apply float animation */
+}
+label{
+    width: 100%;
+    border-radius: 20px;
+}
+#image-moneys{
+    width: 70px;
+    margin-left: 10px;
+}
+
+/* Float Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }}
+
+   

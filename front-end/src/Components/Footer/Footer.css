@@ -1,0 +1,22 @@
+.footer {
+	background-color: red;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+  }
+  
+  .footer-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .social-icons a {
+	color: #fff;
+	margin: 0 5px;
+  }
+  
+  .social-icons a:hover {
+	color: #f00; /* Change color on hover */
+  }
+  

@@ -1,0 +1,78 @@
+/* Sidebar.css */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar .brand {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar .brand h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #34495e;
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+  .sidebar ul li a .svg-inline--fa {
+    margin-right: 10px;
+  }
+  
+  .sidebar .upgrade {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .sidebar .upgrade button {
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .sidebar .upgrade button:hover {
+    background-color: #c0392b;
+    color: #fff;
+  }
+  

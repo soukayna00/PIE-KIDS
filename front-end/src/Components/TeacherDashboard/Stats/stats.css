@@ -1,0 +1,21 @@
+ .stats> .card{
+    background-color: white; 
+    box-shadow: #007bff 1px;
+    
+    /* background-image: url('../../../../public/assets/pattern.png'); 
+    background-size: cover; */
+ }
+ .card> p{
+    color: f6ac5d;
+    font-size: 20px;
+ }
+ .card> h3{
+    color: black;
+    font-size: 22px;
+ }
+ #mario-dance{
+    width: 180px;
+    border-radius: 20px;
+    /* height: 70px; */
+ }
+  

@@ -1,0 +1,11 @@
+.sidebar{
+    /* background-color: #007bff;  */
+    background-image: url('../../../../public/assets/pattern.png'); 
+    background-size: cover; 
+}
+.sidebar li{
+    color: red;
+}
+.brand h2{
+    color: red;
+}

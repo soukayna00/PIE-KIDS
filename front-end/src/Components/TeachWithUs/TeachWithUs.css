@@ -1,0 +1,95 @@
+@font-face {
+    font-family: MarioFont;
+    src: url('C:\Users\PC\PIE KIDS\front-end\src\Components\fonts\SuperMario256.ttf') format('truetype');
+  }
+
+.teach-with-us {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: #007bff; 
+    background-image: url('../../../public/assets/pattern.png'); 
+    background-size: cover; 
+    min-height: 200vh;
+ }
+  
+  .heros {
+    text-align: center;
+    display: flex;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: white;
+    font-family: MarioFont;
+  }
+
+  .heros>h1{
+    font-size: 50px;
+    margin-top: 150px;
+  }
+  
+  .benefits {
+    margin-bottom: 40px;
+    background-color: #333;
+    border-radius: 20px;
+    border:solid #333 1px;
+
+    padding: 20px;
+    color: #fffefe;
+     background: repeating-linear-gradient(
+    -45deg,
+    #000000e0,
+    #000000d2 4px,
+    #333333db 3px,
+    #333333d8 10px
+  );
+
+
+  }
+  
+  .benefit {
+    margin-bottom: 20px;
+    font-size: 20px;
+
+  }
+  
+  .benefit h3 {
+    color: #007bff;
+  }
+  
+  .cta {
+    text-align: center;
+  }
+  .cta h2{
+    font-size: 50px;
+  }
+  .cta p{
+    font-size: 35px;
+  }
+  
+  .cta button {
+    padding: 10px 10px;
+    background: repeating-linear-gradient(
+      -45deg,
+      #000000e0,
+      #000000d2 4px,
+      #333333db 3px,
+      #333333d8 10px
+    );
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    margin: 10px;
+  }
+  
+  .cta button:hover {
+    background-color: #0056b3;
+  }
+  
+  .section-1{
+    display: flex;
+  }
+  #mario-shell{
+    height: 450px;
+  }

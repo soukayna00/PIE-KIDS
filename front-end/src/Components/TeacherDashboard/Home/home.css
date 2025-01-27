@@ -1,0 +1,141 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f7fc; */
+    /* background: linear-gradient(135deg, #f9b770, #FDFFB6); */
+
+    /* font-family: monospace;
+}  */
+
+.containerrs {
+    display: flex;
+    background-image: url('../../../../public/assets/pattern.png'); 
+    background-size: cover;
+    min-height: 100vh;
+    /* background: repeating-linear-gradient(
+    -45deg,
+    #f5f5f5,
+    #f5f5f5 5px,
+    #ddd 5px,
+    #ddd 10px
+); */
+
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #ffffff;
+    color: #1c1b1a;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar .brand h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    color: #f6ac5d;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a  {
+    color: #1c1b1a;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar .upgrade button {
+    background-color: #f6ac5d;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+    box-shadow: 1 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    color: #f6ac5d;
+}
+
+.details {
+    display: flex;
+    margin-top: 20px;
+}
+
+.current-earnings, .top-courses, .student-locations {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    margin-right: 20px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.current-earnings button {
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.top-courses ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-courses ul li {
+    margin: 10px 0;
+}
+.current-earnings h3,.student-locations h3,.top-courses h3 {
+    color: #f6ac5d;
+}

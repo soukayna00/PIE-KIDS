@@ -1,0 +1,110 @@
+@font-face {
+    font-family: MarioFont;
+    src: url('C:\Users\PC\PIE KIDS\front-end\src\Components\fonts\SuperMario256.ttf') format('truetype');
+  }
+  
+/* 
+.Course-Dashboard-container{
+    min-height: 100vh;
+} */
+
+.Course-Dashboard-container> h1{
+color: rgb(77, 214, 77);
+font-family: Mariofont;
+font-size: 50px;
+text-align: center;
+}
+#dashboard-mario{
+    height: 100px;
+}
+
+
+.course-dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .course-dashboard-content {
+    display: flex;
+    width: 100%;
+  }
+  
+  .chapters-navbar {
+    width: 20%;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .chapters-navbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .chapters-navbar li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .chapters-navbar li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .chapter-content {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .the-big-class{
+    display: flex;
+  }
+  .navbar-1{
+    background-color: rgb(77, 214, 77);
+    background-image: url('../../../public/assets/pattern.png');
+    min-height:70vh ;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: MarioFont;
+    color: white;
+    font-size: 20px;
+    width: fit-content;
+    margin: 20px;
+    line-height: 50px;
+  }
+
+
+  content-laser{
+    background-color: #ccc;
+    min-height: 100vh;
+  }
+  
+
+  .download-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgb(25, 193, 25);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #5ad751;
+  }
+
+  .resources,.chapitre-content>h2{
+    font-family: MarioFont;
+    color: rgb(11, 80, 11);
+
+  }
+
+ 
+
+  
+  
+  
+ 
